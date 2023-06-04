@@ -1,0 +1,623 @@
+/* ----------------------------------------
+--------------------Comman Code------------
+------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Newsreader', serif;
+    background-color: #fbf9f7;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* ----------------------------------------
+--------------------Comman Code------------
+------------------------------------------- */
+
+.Hero-background{
+    background-image: url(images/home-hero-bg-free-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+.Hero-background::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.Hero-navbar{
+    padding-top: 50px;
+}
+.nav-right ul{
+    list-style-type: none;
+}
+.nav-right ul li{
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+.nav-right ul li a:hover{
+    color: #c50529;
+}
+.text-hero{
+    text-align: center;
+    color: #fff;
+}
+.text-hero h1 {
+    font-size: 85px;
+    padding-top: 117px;
+}
+.text-hero h5{
+    font-size: 25px;
+
+}
+.text-hero hr {
+    width: 100px;
+    margin-top: -26px;
+    padding-bottom: -20px;
+    color: #8ed1fc;
+}
+.text-hero p{
+    max-width: 543px;
+    margin: 0 auto;
+    padding-top: 21px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-bottom: 22px;
+}
+.text-hero button{
+    padding: 14px 37px;
+    border: none;
+    background-color: #c50529;
+    transition: all 0.5s;
+}
+.text-hero button:hover{
+background-color: #8c95bb;
+}
+.text-hero button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.bottle img{
+    width: 100%;
+    height: 615px;
+}
+
+/* ---------------------------------------------
+-------------------CANADA Section---------------
+ */
+.canada-background{
+    background-image: url(images/grape-leaves1-free-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+    /* height: 500px; */
+}
+
+.canada{
+    padding-top: 100px;
+}
+.best{
+    background-color: #2d3236;
+    width: 100%;
+    /* height: 400px; */
+    text-align: center;
+    color: #fff;
+    padding-bottom: 45px;
+}
+.best h2 {
+    font-size: 41px;
+    max-width: 439px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+.best hr {
+    width: 73px;
+    margin: 0 auto; 
+}
+.best p{
+    max-width: 393px;
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height: 25px;
+}
+.best button{
+    padding: 18px 58px;
+    background-color: #c50529;
+    border: none;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+.best button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.grapes img {
+    width: 100%;
+    height: 450px;
+}
+
+/* -----------------------------------------
+----------Image Section---------------------
+ */
+.label-img{
+    background-image: url(images/wines-wooden-shelve.jpg);
+    width: 100%;
+    /* height: 340px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label-img::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.label-img img{
+    width: 300px;
+    z-index: 2;
+}
+/* ----------------------------------
+----------Vineyard-------------------
+ */
+.Vineyard{
+    text-align: center;
+}
+.Vineyard h1{
+    font-size: 41px;
+    color: #c50529;
+    position: relative;
+}
+.Vineyard h1::after {
+    content: "";
+    border-bottom: 2px solid #fcb900;
+    width: 62px;
+    height: 5px;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    position: absolute;
+    margin: 0 auto;
+}
+.Vineyard p{
+    max-width: 300px;
+    font-size: 19px;
+    line-height: 28px;
+    color: gray;
+    margin: 0 auto;
+}
+.vine img{
+    width: 100%;
+    height: 296px;
+}
+
+.Vineyard button{
+    padding: 14px 24px;
+    background-color: #c50529;
+    border: none;
+    margin-top: 20px;
+    transition:all 0.5s;
+}
+.Vineyard button a{
+    color: #fff;
+    text-decoration: none;
+}
+.Vineyard button:hover{
+    background-color: #8c95bb;
+}
+
+
+.label-img-1{
+    background-image: url(images/home-hero-bg-free-img.jpg);
+    width: 100%;
+    height: 299px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.label-img-1::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.label-img-1 h1{
+    color: #c50529;
+    font-size: 42px;
+
+}
+.label-img-1 p{
+    color: #fff;
+}
+.label-img-1 button{
+    padding: 20px 45px;
+    border-radius: 5px;
+    background-color: #c50529;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.8s;
+
+}
+.label-img-1 button a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.label-img-1 button:hover{
+    background-color: #e6e6e6;
+}
+
+.label-img-1 button a:hover{
+    color:#2d3236; 
+}
+
+
+
+/* -------------------------------
+--------Wine Bottle---------------
+ */
+ .w-bottle{
+    padding-top: 150px;
+ }
+.bottle-h img{
+width: 100%;
+}
+.grapes_background{
+    background-image: url(images/grapes.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    background-color: #2d3236;
+}
+.grapes_background::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #2d3236;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+}
+/* .grapes_background h2::before{
+    content: "";
+    border-bottom: 3px solid white;
+    position: relative;
+    width: 150px;
+    height: 5px;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+} */
+
+.grapes_background h2{
+    color: #fff;
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 35px;
+}
+.grapes_background h6{
+    padding-left: 116px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: -14px;
+}
+.hr hr {
+    width: 51px;
+    height: 2px;
+    position: relative;
+    top: 50px;
+    left: -127px;
+    color: red;
+}
+.grapes_background button{
+    padding: 14px 24px;
+    margin-left: 112px;
+    background-color: #c50529;
+}
+.grapes_background button a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------
+----------- Black Leaf-----------------
+ */
+
+
+.grapes_leaf{
+    background-image: url(images/grape-leaves-free-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    color: #fff;
+    padding-bottom: 80px;
+    background-attachment: fixed;
+}
+
+.grape-image img{
+    text-align: center;
+    width: 500px;
+    height: 653px;
+    padding-top: 80px;
+}
+.grape-text h4{
+    padding-top: 199px;
+    font-size: 25px;
+}
+.grape-text h2{
+    color: #8c95bb;
+    font-size: 42px;
+}
+.grape-text p{
+    font-size: 20px;
+}
+.grape-text button{
+    background-color: #c50529;
+    padding: 22px 47px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s;
+}
+.grape-text button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+   
+}
+.grape-text button:hover{
+    background-color: #8c95bb;
+}
+
+/* ---------------------------------------
+---------VineYard Image-------------------
+ */
+.Vineyard-image{
+    background-image: url(images/vineyard-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container{
+    width: 300px;
+    height: 100px;
+    /* background-color: red;/ */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo-container a{
+    text-decoration: none;
+    color: #c50529;
+}
+.logo-container a:hover{
+    color: #8c95bb;
+}
+
+
+/* ----------------------------------------------
+-------------- Footer-----------------------------
+ */
+
+ footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+
+
+    @media screen and (max-width:1024px) {
+    .container-2 {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .nav-left img{
+        padding-left: 144px;
+    }
+    .nav-right ul li {
+        display: inline-block;
+        padding-left: 46px;
+        font-size: 18px;
+    }
+    .text-hero h1 {
+        font-size: 61px;
+        padding-top: 149px;
+    }
+    .text-hero p {
+        max-width: 381px;
+        margin: 0 auto;
+        padding-top: 21px;
+        line-height: 30px;
+        font-size: 18px;
+        padding-bottom: 22px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+
+    }
+    .nav-right ul li {
+        display: inline-block;
+        padding-left: 28px;
+        font-size: 17px;
+    }   
+    
+}
+
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    .nav-right ul li {
+        display: inline-block;
+        padding-left: 7px;
+        font-size: 13px;
+    }
+    .text-hero h1 {
+        font-size: 61px;
+        padding-top: 24px;
+    }
+    .nav-left img {
+        padding-left: 112px;
+    }
+    .Vineyard button {
+        padding: 14px 24px;
+        background-color: #c50529;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+    }
+    .hr hr {
+        width: 51px;
+        height: 2px;
+        position: relative;
+        top: 50px;
+        left: -40px;
+        color: red;
+    }
+    .grape-image img {
+        text-align: center;
+        width: 100%;
+        height: 653px;
+        padding-top: 80px;
+    }
+    .grape-text h4 {
+        padding-top: 1px;
+        font-size: 25px;
+    }
+}

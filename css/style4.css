@@ -1,0 +1,301 @@
+/* ----------------------------------------
+--------------------Comman Code------------
+------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arbutus Slab', serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* ----------------------------------------
+--------------------Comman Code------------
+------------------------------------------- */
+
+.Hero-background {
+    background-image: url(images/event.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    position: relative;
+    z-index: 1;
+    padding-bottom: 78px;
+}
+.Hero-background::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.Hero-navbar {
+    padding-top: 50px;
+}
+
+.nav-right ul {
+    list-style-type: none;
+    margin-left: 250px;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+
+}
+
+.nav-right ul li a:hover {
+    color: #c50529;
+}
+.hero-background-text {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-background-text h5 {
+    font-size: 17px;
+    padding-top: 150px;
+}
+
+.hero-background-text h1 {
+    font-size: 78px;
+    max-width: 668px;
+    margin: 0 auto;
+    font-weight: bolder;
+    padding-bottom: 50px;
+}
+
+.hero-background-text p {
+    font-size: 15px;
+    max-width: 907px;
+    margin: 0 auto;
+}
+
+/* -------------------------------
+-------Gray Leafs-----------------
+ */
+ .gray-leafs{
+    background-image: url(images/grape-leaves1-free-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    background-attachment: fixed;
+    padding-bottom: 78px; 
+    text-align: center;
+    margin-top: -20px;
+ }
+ .gray-leafs h1{
+    padding-top: 150px;
+    color: #c50529;
+    font-size: 42px;
+    font-weight: bolder;
+ }
+ .gray-leafs p{
+    max-width: 808px;
+    margin: 0 auto;
+    color: gray;
+ }
+ /* --------------------------------------
+ ------ Contact Section-------------------
+  */
+  .contact-text{
+  }
+  .contact-text h1{
+    padding-top: 100px;
+    color: #c50529;
+    font-size: 42px;
+    text-align: center;
+
+  }
+  .contact-text p{
+    max-width: 383px;
+    margin: 0 auto;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+
+  /* ------------------------------------
+ ------------.Vineyard Section----------
+  */
+
+ .Vineyard-image {
+    background-image: url(images/vineyard-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    width: 300px;
+    height: 100px;
+    /* background-color: red;/ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #c50529;
+}
+
+.logo-container a:hover {
+    color: #8c95bb;
+}
+
+/* ----------------------------------------------
+-------------- Footer-----------------------------
+ */
+
+ footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+    .container-2 {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .nav-left img {
+        padding-left: 144px;
+    }
+
+    .nav-right ul {
+        list-style-type: none;
+        margin-left: 88px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+
+    }
+
+    .nav-right ul li {
+        display: inline-block;
+        padding-left: 28px;
+        font-size: 17px;
+    }
+    .nav-right ul {
+        list-style-type: none;
+        margin-left: -45px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    .nav-right ul li {
+        display: inline-block;
+        padding-left: 7px;
+        font-size: 13px;
+    }
+    .hero-background-text h1 {
+        font-size: 51px;
+        max-width: 668px;
+        margin: 0 auto;
+        font-weight: bolder;
+        padding-bottom: 50px;
+    }
+    .gray-leafs h1 {
+        padding-top: 72px;
+        color: #c50529;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
